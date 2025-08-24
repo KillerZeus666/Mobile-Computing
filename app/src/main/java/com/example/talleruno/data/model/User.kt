@@ -17,7 +17,10 @@ data class User(
     val company: Company,
     val email: String,
     val age: Int,
-    val gender: String
+    val gender: String,
+    val university: String,
+    val height: Float,
+    val weight: Float,
 )
 
 @Serializable
