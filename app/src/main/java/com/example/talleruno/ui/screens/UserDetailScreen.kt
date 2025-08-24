@@ -33,7 +33,7 @@ fun UserDetailScreen(user: User) {
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
-            horizontalAlignment = Alignment.Start // 👈 mantiene el texto a la izquierda
+            horizontalAlignment = Alignment.Start
         ) {
             // Imagen centrada arriba
             androidx.compose.foundation.layout.Row(
