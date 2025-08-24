@@ -2,10 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    kotlin("plugin.serialization") version "1.9.23" // 👈 esto está bien
+    kotlin("plugin.serialization") version "1.9.23"
 }
-    val ktorVersion = "2.3.10"
-
 
 android {
     namespace = "com.example.talleruno"
@@ -52,6 +50,14 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
+    // ✅ Navegación y ViewModel para Compose
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+
+    // ✅ Foundation (para LazyColumn + stickyHeader)
+    implementation("androidx.compose.foundation:foundation")
+
+    // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,12 +73,10 @@ dependencies {
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-client-logging:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-    implementation("io.ktor:ktor-client-okhttp:2.3.12")
 
     // ✅ Kotlinx Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 
-    // ✅ Coil 3
-    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
-    implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
+    // ✅ Coil 2 (estable, con AsyncImage)
+    implementation("io.coil-kt:coil-compose:2.4.0")
 }
