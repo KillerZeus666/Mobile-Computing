@@ -2,6 +2,7 @@
 
 Este proyecto es una aplicación móvil desarrollada en **Kotlin** utilizando **Jetpack Compose**.  
 La app consume datos de la API pública [DummyJSON Users](https://dummyjson.com/users) y muestra una lista de usuarios.  
+Video explicativo: https://www.youtube.com/watch?v=thy4mQOeeYk
 
 ## ✨ Características  
 
@@ -42,3 +43,5 @@ com.example.talleruno/
 │
 ├── HomeScreen.kt           # Pantalla inicial
 └── UsersViewModel.kt       # Lógica de negocio (MVVM)
+
+
