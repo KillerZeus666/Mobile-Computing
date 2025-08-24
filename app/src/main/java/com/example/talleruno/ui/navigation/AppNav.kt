@@ -32,6 +32,7 @@ fun AppNav() {
 
     NavHost(navController = nav, startDestination = Dest.List.route) {
         composable(Dest.List.route) {
+            //Pantalla que muestra la lista de Usuarios
             UsersListScreen(
                 state = uiState.value,
                 onRetry = vm::refresh,

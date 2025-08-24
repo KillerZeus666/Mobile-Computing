@@ -11,6 +11,7 @@ import io.ktor.client.request.get
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
+//Clase que realiza la petición http a la API con la lista de Usuarios
 class ApiClient {
     private val client = HttpClient(OkHttp) {
         install(ContentNegotiation) {
