@@ -28,13 +28,17 @@ La app consume datos de la API pública [DummyJSON Users](https://dummyjson.com/
 
 ## 📂 Estructura del proyecto  
 
+```bash
 com.example.talleruno/
+│
 ├── data/
-│ ├── model/ # Modelos de datos (User, UsersResponse)
-│ └── remote/ # Cliente HTTP y repositorio (ApiClient, UsersRepository)
+│   ├── model/              # Modelos de datos (User, UsersResponse)
+│   └── remote/             # Cliente HTTP y repositorio (ApiClient, UsersRepository)
+│
 ├── ui/
-│ ├── navigation/ # Configuración de navegación (AppNav.kt)
-│ ├── screens/ # Pantallas (UsersListScreen.kt, UserDetailScreen.kt)
-│ └── theme/ # Tema y estilos
-├── HomeScreen.kt # Pantalla inicial
-└── UsersViewModel.kt # Lógica de negocio (MVVM)
+│   ├── navigation/         # Configuración de navegación (AppNav.kt)
+│   ├── screens/            # Pantallas (UsersListScreen.kt, UserDetailScreen.kt)
+│   └── theme/              # Tema y estilos
+│
+├── HomeScreen.kt           # Pantalla inicial
+└── UsersViewModel.kt       # Lógica de negocio (MVVM)
