@@ -1,5 +1,6 @@
 package com.example.talleruno.ui
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
@@ -28,4 +29,9 @@ fun MensajeBienvenidaPreview(){
 //Unidades de medida sp vs dp
 //Usar texto de acuerdo a sp
 
-//Logo app
+@Composable
+fun BodyHomeScreen(){
+    Column {
+        MensajeBienvenida("Twitter")
+    }
+}
